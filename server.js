@@ -1,6 +1,5 @@
 var socketIO = require('socket.io');
-var server = require('http').createServer().listen(process.env.PORT||7000, '0.0.0.0');
-var io = socketIO.listen(server);
+var io = socketIO.listen(process.env.PORT||7000);
 
 // Super simple server:
 //  * One room only. 
