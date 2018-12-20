@@ -1,5 +1,5 @@
 var socketIO = require('socket.io');
-var server = require('http').createServer().listen(7000, '0.0.0.0');
+var server = require('http').createServer().listen(process.env.PORT||7000, '0.0.0.0');
 var io = socketIO.listen(server);
 
 // Super simple server:
